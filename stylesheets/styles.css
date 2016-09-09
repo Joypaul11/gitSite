@@ -328,8 +328,7 @@ footer {
 body, html {
     height: 100%;
 }
-
-.parallax { 
+body { 
     /* The image used */
     background-image: url("../Port-15-1610x1000.jpg");
 
