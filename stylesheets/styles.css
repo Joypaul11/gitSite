@@ -18,3 +18,10 @@ p,h1{
     padding-left:30px;
     font-weight:40;
 }
+
+p{
+    
+    position: fixed;
+    bottom: 0;
+
+}
