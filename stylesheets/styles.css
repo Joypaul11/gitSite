@@ -15,13 +15,14 @@ body {
     background-size: cover;
 }
 p,h1{
+    color:gray;
     font-family: Cursive;
     padding-left:30px;
     font-weight:40;
 }
 
 p{
-    color:gray;
+
     position: fixed;
     bottom: 0;
 
