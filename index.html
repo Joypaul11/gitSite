@@ -1,26 +1,201 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Joy</title>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Unison</title>
+  <base href="/">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-    
-   
-  <h1>Joydeep Paul.</h1>
-
-
-  <p>All is vanity, all falsehood. Except that infinite sky.</p>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="assets/fonts/open-sans/open-sans.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/unison-custom.css" rel="stylesheet">
   
-  </body>
+    <link href="assets/css/bootstrap-extensions.css" rel="stylesheet">
+    
+    <link href="assets/css/forms.css"  rel="stylesheet">
+   
+    <script src="assets/js/modernizr.custom.js"></script> 
+    <script src="https://js.pusher.com/4.0/pusher.min.js"></script>
+    <!--
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBTECWekNq7Yt3lVl0xCyX1mQ7mVwhOkFo&libraries=places"></script>
+    -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="node_modules/chart.js/src/chart.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+
+    
+    
+    
+</head>
+<body>
+        
+            <!--    
+            <div class="row">
+                <button type="button" class="btn btn-primary" onclick="show()">New Notification!</button>
+                </div> -->
+            </div>
+
+
+  <app-root></app-root>
+  
+
+    <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/unison-custom.js"></script>
+
+
+
+  
+
+  <!--
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuBzeYkYimIquGG5KkIcB6vFmtHMUzDFo&signed_in=true&libraries=places&callback=initMap" async defer></script>
+  -->
+
+<!--
+  <script>
+    
+        var x = document.getElementById('notification');
+        var not_counter = 0; 
+        x.style.display = 'none';
+
+      //Notification.requestPermission();
+  
+      // Enable pusher logging - don't include this in production
+      Pusher.logToConsole = true;
+      let token = sessionStorage.getItem('Token');
+        sessionStorage.setItem("notCounter", '0');
+        let n_token = token.replace(/['"]+/g, '');
+        let str1 = 'Bearer ';
+        let str = str1.concat(n_token);
+        console.log("key : " + str);
+        
+      var pusher = new Pusher('9e451a0df8e82e76773e', {
+        cluster: 'ap2',
+        encrypted: true,
+        auth: {
+           headers: {
+            Authorization: str
+          }
+        },
+        authEndpoint: "http://52.11.67.218/api/v1/pusher/auth"
+      });
+  
+      //Subscribing to channels
+      var channel = pusher.subscribe('private-alerts');
+      channel.bind('alerts', function(data) {
+        not_counter = parseInt(sessionStorage.getItem("notCounter"));  
+        
+        not_counter += 1;
+        sessionStorage.setItem("notCounter", not_counter);
+        x.style.display = 'block'; 
+        var buff_string = '<li><div class="col-md-12 col-sm-12 col-xs-12 pd-l0 itemo" ><a>' + data.message + '</a> <a  class="rIcon"><i class="fa fa-dot-circle-o"></i></a><br><p class="time">' + new Date().toLocaleString(); + '</p></div></li>'
+        var count_div = document.getElementById('notif_count')
+        var pusher_div = document.getElementById('pusher')
+
+        $('pusher').each(function() {
+            console.log('Count : ' + ($(this).find('.itemo')).length);
+        }
+        );
+        /*pusher_div.innerHTML += '<li><div class="col-md-12 col-sm-12 col-xs-12 pd-l0" ><a>'
+        pusher_div.innerHTML += data.message
+        pusher_div.innerHTML += '</a> <a  class="rIcon"><i class="fa fa-dot-circle-o"></i></a><br><p class="time">'
+            pusher_div.innerHTML += new Date().toLocaleString();
+            pusher_div.innerHTML += '</p></div></li>'
+        */
+        // pusher_div.innerHTML.prepend(buff_string);
+        pusher_div.innerHTML = buff_string + pusher_div.innerHTML
+        count_div.innerHTML = not_counter 
+        x.innerHTML = '<div class="row"><button type="button" class="btn btn-primary" onclick="show()">' + data.message + '</button></div>'
+        console.log(data.message);
+        setTimeout(()=>{    //<<<---    using ()=> syntax
+            x.style.display = 'none'; 
+        }, 3000);
+      });
+    
+    </script>
+-->
+   
+  <script>
+  	$("#menu-icon").click(function() {
+        $("#chang-menu-icon").toggleClass("fa-bars");
+        $("#chang-menu-icon").toggleClass("fa-times");
+        $("#show-nav").toggleClass("hide-sidebar");
+        $("#show-nav").toggleClass("left-sidebar");
+          
+       $("#left-container").toggleClass("less-width");
+        $("#right-container").toggleClass("full-width");
+      });
+  </script> 
+  <script>
+        $(document).ready(function(){
+            $(".dropdown").hover(            
+                function() {
+                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop( true, true ).slideDown("fast");
+                    $(this).toggleClass('open');        
+                },
+                function() {
+                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop( true, true ).slideUp("fast");
+                    $(this).toggleClass('open');       
+                }
+            );
+        });
+    </script>   
+    
+    <script>
+        $(document).ready(function() {
+        $(".btn-pref .btn").click(function () {
+            $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+            // $(".tab").addClass("active"); // instead of this do the below 
+            $(this).removeClass("btn-default").addClass("btn-primary");   
+        });
+        });
+    </script>
+    <!--<script>
+        var room = 1;
+        function unison_user_fields() {
+
+            room++;
+            var objTo = document.getElementById('unison_user_fields')
+            var divtest = document.createElement("div");
+            divtest.setAttribute("class", "form-group removeclass"+room);
+            var rdiv = 'removeclass'+room;
+            divtest.innerHTML = '<div class="col-sm-7 nopadding"><div class="form-group"><input type="text" class="form-control" id="EmailId" name="emailId[]" value="" placeholder="Enter Email ID"></div></div><div class="col-sm-4 nopadding"><div class="form-group"><select class="form-control" id="role" name="role[]"><option *ngFor="let article of roles" value="{{article.role}}">{{article.role}}</option></select></div></div><div class="col-sm-4 nopadding"><div class="form-group"><select class="form-control" id="role" name="role[]"><option *ngFor="let article of org" value="{{article.name}}">{{article.name}}</option></select></div></div><div class="col-sm-1 nopadding"><img class="add-btn" src="assets/images/minus-btn.png" type="button"  onclick="remove_unison_user_fields('+room+');"></div><div class="clear"></div>';
+
+            objTo.appendChild(divtest)
+        }
+        function remove_unison_user_fields(rid) {
+            $('.removeclass'+rid).remove();
+        }
+    </script>-->
+
+    
+    <script type="text/javascript">
+        var datefield=document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type!="date"){ //if browser doesn't support input type="date", load files for jQuery UI Date Picker
+            document.write('<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />\n')
+            document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"><\/script>\n')
+            document.write('<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"><\/script>\n') 
+        }
+    </script>
+     
+    <script>
+    if (datefield.type!="date"){ //if browser doesn't support input type="date", initialize date picker widget:
+        jQuery(function($){ //on document.ready
+            $('input[type="date"]').datepicker({ dateFormat: 'yy-mm-dd' });
+        })
+    }
+    </script>
+   
+
+
+
+
+  
+
+<script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="scripts.bundle.js"></script><script type="text/javascript" src="styles.bundle.js"></script><script type="text/javascript" src="vendor.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
 </html>
