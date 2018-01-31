@@ -1,0 +1,1875 @@
+html {
+
+}
+
+body {
+  background: url(../images/bg-pattern.png);
+}
+
+.slicknav_menu {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+.mobile-only {
+    display: none;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.menu-section {
+    position: fixed;
+    padding: 20px 40px;
+    width: 100%;
+    z-index: 99;
+}
+
+.tni-nav-logo {
+    height: 60px;
+    float: left;
+    margin-left: 40px;
+}
+
+.logo-text {
+  margin: auto !important; 
+  font-weight: bolder !important; 
+  font-style: normal !important;
+}
+
+.main-head {
+  text-align: center;
+  font-family: 'Courier New';
+  font-size: 20px;
+  font-style: italic;
+}
+
+.service-head{
+  font-size: 20px !important; 
+  font-weight:bolder !important;
+}
+
+.menu-items {
+    list-style: none;
+    float: left;
+    margin-left: -15px;
+}
+
+.menu-items-right {
+    list-style: none;
+    float: right;
+}
+
+.menu-items > li {
+    float: left;
+    font-family: 'Courier New';
+	font-weight: normal;
+	font-style: normal;
+    text-align: left !important;
+    font-size: 18px;
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+.menu-items-right > li {
+    float: left;
+    font-family: 'Courier New';
+	font-weight: normal;
+	font-style: normal;
+    text-align: right !important;
+    font-size: 18px;
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+li > a {
+    color: #000;
+    text-decoration: none;
+}
+
+li > a:hover {
+    color: #5E9B6D;
+    text-decoration: none;
+}
+
+.mr-90 {
+    margin-right: 90px !important;
+}
+
+.menu-right-section {
+    float: right !important;
+}
+
+.switch {
+    z-index: 9999 !important;
+}
+
+.switch-text {
+    color: #000;
+    font-family: "yeah_papayeah_papa";
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -15px;
+    margin-left: -60px;
+    float: left;
+}
+
+
+/*** Toggle Switch ***/
+/* ============================================================
+  COMMON
+============================================================ */
+.underline {
+	 text-decoration: underline;
+}
+
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* ============================================================
+  SWITCH 1 - ROUND
+============================================================ */
+input.cmn-toggle-round + label {
+  padding: 2px;
+  width: 50px;
+  height: 25px;
+  background-color: #dddddd;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.cmn-toggle-round + label:before, input.cmn-toggle-round + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+input.cmn-toggle-round + label:before {
+  right: 1px;
+  background-color: rgba(244, 108, 18, 0.89);
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round + label:after {
+  width: 25px;
+  background-color: #fff;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: margin 0.4s;
+  -moz-transition: margin 0.4s;
+  -o-transition: margin 0.4s;
+  transition: margin 0.4s;
+}
+input.cmn-toggle-round:checked + label:before {
+  background-color: #8ce196;
+}
+input.cmn-toggle-round:checked + label:after {
+  margin-left: 25px;
+}
+
+/* ------------ */
+
+.tni-leftfixed-border {
+    position: absolute;
+    margin-left: 40px;
+    z-index: 9999;
+}
+
+.lt-border {
+    position: fixed;
+    float: left;
+    bottom: 10vh;
+    height: 70vh;
+    width: auto;
+}
+
+.tni-rightfixed-border {
+    position: absolute;
+    right: 40px;
+    margin-right: 20px;
+    z-index: 9999;
+}
+
+.tni-right-border {
+    float: right;
+    position: absolute;
+    right: -20px;
+    top: 15%;
+}
+
+.social-icon {
+    width: 5vh;
+    height: auto;
+    margin: 10px 0;
+}
+
+
+.rt-border {
+    height: 40vh;
+    position: fixed;
+    margin-top: 10vh;
+}
+
+.rb-border {
+    height: 9vh;
+    bottom: 8vh !important;
+    position: fixed;
+}
+
+.right-social-icons {
+    position: fixed;
+    text-align: center;
+    margin-left: -15px;
+    margin-top: 50vh;
+}
+
+.rotate {
+
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+
+    /* IE */
+    -ms-transform: rotate(-90deg);
+
+    /* Opera */
+    -o-transform: rotate(-90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.tni-left-section {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.tni-right-section {
+    width: 50%;
+    float: right;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.home-banner-img {
+    position: relative;
+}
+
+.home-img-border {
+    position: absolute;
+    height: 80vh;
+    left: 12vw;
+    margin-top: 20px;
+}
+
+.home-img {
+    position: absolute;
+    height: 50vh;
+    top: 20vh;
+    left: 10vw;
+}
+
+.tni-logo {
+    height: 200px;
+    width: auto;
+    text-align: center !important;
+    margin-top: 10vh;
+    margin-left: -286px;
+}
+
+.home-main-text {
+    width: 75%;
+    font-family: 'Courier New';
+	font-weight: normal;
+	font-style: italic;
+    text-align: left !important;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.error {
+  color: red;
+}
+
+#error-container {
+  margin-top: 20px;
+}
+
+.home-horizontal-border {
+    width: 40vw;
+    text-align: left !important;
+    padding-left: 10px;
+    float: left;
+}
+
+.home-quote {
+    font-family: 'Courier New';
+	font-weight: normal;
+	font-style: italic;
+    text-align: right !important;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 15px;
+    float: left;
+}
+
+.home-tag-text {
+    font-family: 'yeah_papayeah_papa';
+    font-size: 50px;
+    color: #000;
+    position: absolute !important;
+    top: 280px;
+    left: 300px;
+}
+
+.services-section-text {
+    font-family: 'Courier New';
+	font-weight: normal;
+    font-style: italic;
+    text-align: right !important;
+    font-size: 18px;
+    width: 50%;
+    margin-left: 30vw;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-left: 95px;
+}
+
+.services-section-below-text {
+    font-family: 'Courier New';
+	font-weight: normal;
+    font-style: italic;
+    text-align: left !important;
+    font-size: 18px;
+    width: 45%;
+    margin-left: 25vw;
+    margin-top: 30px;
+}
+
+.services-box {
+    text-align: center;
+    clear: both;
+    position: relative;
+}
+
+.servicesbox-img {
+    width: 20vw;
+}
+
+.services-pencil-img {
+    position: absolute;
+    width: 22vw;
+    margin-left: -17vw;
+    top: 5vh;
+}
+
+.design-bubble {
+    position: absolute;
+    width: 10vw;
+    margin-left: 5.5vw;
+    top: -1.5vh;
+}
+
+.spacebar-img {
+    position: absolute;
+    width: 22vw;
+    margin-left: -24vw;
+    top: 20vh;
+}
+
+.tech-bubble {
+    position: absolute;
+    width:9vw;
+    margin-left: -34vw;
+    top: 19vh;
+}
+
+.marketing-img {
+    position: absolute;
+    width: 23vw;
+    margin-left: -17vw;
+    top: 35vh;
+}
+
+.marketing-bubble {
+    position: absolute;
+    width: 8vw;
+    margin-left: 5vw;
+    top: 40vh;
+}
+
+.design-left-img {
+    float: left;
+    margin-left: -50px;
+    height: 40vh;
+    position: absolute;
+    top: 34vh;
+    z-index: 3;
+}
+
+.design-leftbottom-img {
+    height: 30vh;
+    position: absolute;
+    top: 61vh;
+    left: 5.5vw;
+    z-index: -1;
+}
+
+.bolder {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.bolder-mar {
+  font-weight: bolder;
+  margin-left: 23px;
+  font-size: 18px;
+}
+
+.design-content {
+    text-align: center;
+}
+
+.design-content-text {
+    width: 40vw;
+    height: 100%;
+    text-align: center;
+    top: 40px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.design-content-text h1,p,h2,h3 {
+    text-align: right;
+    font-family: 'Courier New';
+	font-weight: normal;
+	font-style: italic;
+    font-size: 16px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.marketing-content-text {
+    width: 40vw;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    padding-left: 80px;
+}
+
+.marketing-content-text h1,p,h2 {
+    text-align: right;
+    font-family: 'Courier New';
+	font-weight: normal;
+	font-style: italic;
+    font-size: 16px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.services-list-ul {
+    float: right;
+    direction: rtl;
+    clear: both;
+    padding-right: 15px;
+}
+
+.services-list-ul li {
+    font-family: 'Courier New';
+	font-weight: normal;
+	font-style: italic;
+    font-size: 16px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.design-contentborder {
+    clear: both;
+    height: 60vh;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 9999 !important;
+}
+
+.design-left-top-img {
+    clear: both;
+    position: absolute;
+    height: 40vh;
+    text-align: center;
+    margin: 0 auto;
+    left: 0 ;
+    right: 0;
+    margin-left: 22vw;
+    top: 8vh;
+    z-index: -1;
+}
+
+.design-bird-img {
+    position: absolute;
+    height: 30vh;
+    left: 12vw;
+    top: 12vh;
+    z-index: -2;
+}
+
+.design-right-top {
+    position: absolute;
+    float: right;
+    top: 7vh;
+    right: 20vw;
+    height: 25vh;
+    z-index: -1;
+}
+
+.design-right-bottom {
+    position: absolute;
+    height: 40vh;
+    float: right;
+    right: 13vw;
+    top: 53vh;
+    z-index: -1;
+}
+
+.design-bottom-meteor {
+    position: absolute;
+    height: 20vh;
+    float: right;
+    right: 17vw;
+    top: 62vh;
+    z-index: -1;
+}
+
+.design-black-bg {
+    position: absolute;
+    height: 15vh;
+    float: right;
+    right: 16vw;
+    top: 15vh;
+}
+
+#homecolorimg {
+    opacity: 0;
+}
+
+#homecolorimg.showImage {
+    opacity: 1;
+    /*-webkit-animation: wiggle 0.2s 2;
+    -webkit-transition: opacity 0.3s ease-in;
+    -moz-transition: opacity 0.3s ease-in;
+    -o-transition: opacity 0.3s ease-in;
+    -ms-transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in;*/
+}
+
+.showImage {
+    opacity: 1;
+    /*-webkit-transition: opacity 0.1s ease-in;
+    -moz-transition: opacity 0.1s ease-in;
+    -o-transition: opacity 0.1s ease-in;
+    -ms-transition: opacity 0.1s ease-in;
+    transition: opacity 0.1s ease-in;*/
+}
+
+.hideImage {
+    opacity: 0;
+    /*-webkit-transition: opacity 0.1s ease-in;
+    -moz-transition: opacity 0.1s ease-in;
+    -o-transition: opacity 0.1s ease-in;
+    -ms-transition: opacity 0.1s ease-in;
+    transition: opacity 0.1s ease-in;*/
+}
+
+.noshow {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+}
+
+.animatenoise {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    /*background-image: url("../images/noise.png");*/
+    background-size: 100% 100%;
+	margin: 0 auto;
+    background-repeat: no-repeat;
+
+    /*-webkit-animation: wink 0.033s steps(1,16);
+    -moz-animation: wink 0.033s steps(1,16);
+    animation: wink 0.033s steps(1,16);
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;*/
+}
+
+.animatevoice {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    /*background-image: url("../images/voice.png");*/
+    background-size: 100% 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+
+    /*-webkit-animation: wink 0.033s steps(16);
+    -moz-animation: wink 0.033s steps(16);
+    animation: wink 0.033s steps(16);
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;*/
+}
+
+.tech-section {
+    width: 100%;
+    background: url("../images/tech-bg-black.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.design-section {
+    width: 100%;
+    background: url("../images/design-bg-black.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.marketing-section {
+    width: 100%;
+    background: url("../images/marketing-bg-black.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.ltr {
+    direction: ltr !important;
+    float: left !important;
+    text-align: left !important;
+}
+.ltr > li {
+    text-align: left !important;
+}
+
+.align-left {
+    text-align: left !important;
+}
+
+.float-right {
+    float: right !important;
+    text-align: right !important;
+}
+
+.portfolio-grid {
+    padding-top 200px;
+}
+
+.contact-section {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.sounds-good {
+    color: #000;
+    font-family: "yeah_papayeah_papa";
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-text {
+    font-family: 'Courier New';
+	font-weight: normal;
+    font-size: 18px;
+    text-align: left;
+}
+
+.contact-text a {
+    color: #000;
+}
+
+.contact-form {
+    padding: 20px 0px;
+}
+
+.tni-submit {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    font-family: "yeah_papayeah_papa";
+    font-size: 30px;
+    font-weight: 400;
+    border: 1px solid #000;
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.tni-submit:hover,
+.tni-submit.hover {
+    background-color: #8CE196;
+    border: 1px solid #8CE196;
+    color: #000;
+    cursor: pointer;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+}
+
+.tni-location {
+    width: 20%;
+    float: left;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.contactform-left {
+    width: 50%;
+    float: left;
+}
+
+.contactform-right {
+    width: 50%;
+    float: right;
+}
+
+.tni-contact label {
+    margin-top: 15px;
+    font-family: 'Courier New';
+	  font-weight: normal;
+    font-size: 16px;
+}
+
+
+.tni-contact input {
+    width: 80%;
+    height: 40px;
+    border-color: transparent;
+}
+
+.tni-contact input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 90%;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 1px;
+  padding: 10px;
+  border: solid 1px #3b3b3b;
+  transition: box-shadow 0.3s, border 0.3s;
+  background-color: transparent;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+
+.tni-contact input[type="text"]:focus {
+  outline: none;
+}
+
+.tni-contact input[type="text"]:focus,
+.tni-contact input[type="text"].focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+.tni-contact input[type="email"] {
+  display: block;
+  margin: 0;
+  width: 90%;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 1px;
+  padding: 10px;
+  border: solid 1px #3b3b3b;
+  transition: box-shadow 0.3s, border 0.3s;
+  background-color: transparent;
+  margin-right: 25px;
+}
+
+.tni-contact input[type="email"]:focus {
+  outline: none;
+}
+
+.tni-contact input[type="email"]:focus,
+.tni-contact input[type="email"].focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+.inner-page-search input {
+    width: 100% !important;
+}
+
+.tni-contact input[type="tel"] {
+  display: block;
+  margin: 0;
+  width: 90%;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 1px;
+  padding: 10px;
+  border: solid 1px #3b3b3b;
+  transition: box-shadow 0.3s, border 0.3s;
+  background-color: transparent;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+.tni-contact input[type="tel"]:focus {
+  outline: none;
+}
+
+.tni-contact input[type="tel"]:focus,
+.tni-contact input[type="tel"].focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+textarea {
+      width: 95%;
+      height: 200px;
+      font-weight: 400;
+      font-size: 14px;
+      color: #000;
+      appearance: none;
+      box-shadow: none;
+      border-radius: 1px;
+      padding: 10px;
+      border: solid 1px #3b3b3b;
+      transition: box-shadow 0.3s, border 0.3s;
+      background-color: transparent;
+      margin-right: 25px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+textarea:focus,
+textarea.focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+.and-more {
+    color: #000;
+    font-family: "yeah_papayeah_papa";
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+    .mobile-only {
+        display: block;
+    }
+
+    .mobile-no-show {
+        display: none;
+    }
+
+    .tni-left-section {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .tni-right-section {
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    .tni-logo {
+        height: 150px;
+        width: auto;
+        text-align: center !important;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .home-img-border {
+        position: static;
+        width: 90vw;
+        left: 0;
+        margin-top: -50px;
+    }
+
+    .tni-leftfixed-border {
+        display: none;
+    }
+
+    .tni-rightfixed-border {
+        display: none;
+    }
+
+    .home-img {
+        position: absolute;
+        width: 80vw;
+        top: 15vh;
+        left: 10vw;
+        height: auto;
+    }
+
+    .js #menu {
+		display:none;
+	}
+
+	.js .slicknav_menu {
+		display:block;
+        z-index:9999 !important;
+	}
+
+    .slicknav_menu {
+        display: block;
+        *zoom: 1;
+        font-size: 16px;
+        background: none !important;
+        padding: 5px;
+        margin-top: 10px !important;
+        z-index:9999 !important;
+    }
+
+    .slicknav_menutxt {
+        display: none !important;
+    }
+
+    .slicknav_menu .slicknav_icon {
+        float: none !important;
+        width: 1.125em;
+        height: 4.875em;
+        margin: 0 !important;
+    }
+
+    .slicknav_nav a {
+        text-decoration: none;
+        font-family: 'Courier New';
+        font-weight: normal;
+        font-style: normal;
+        text-align: right !important;
+        font-size: 18px;
+        margin-right: 30px;
+        font-weight: 600;
+        color: #000 !important;
+        border-bottom: 1px solid #000;
+    }
+
+    .slicknav_nav a:hover {
+        -webkit-border-radius: 0px !important;
+        -moz-border-radius: 0px !important;
+        border-radius: 0px !important;
+        background: #fff !important;
+        color: #000 !important;
+    }
+
+    .slicknav_nav, .slicknav_nav ul {
+        list-style: none;
+        overflow: hidden;
+        padding: 0;
+        width: 45vw;
+        float: right;
+    }
+
+    .mobile-logo {
+        position: absolute;
+        top:10px;
+        z-index:9999;
+    }
+
+    .tni-nav-logo {
+        height: 60px;
+        float: left;
+        margin-left: 20px;
+    }
+
+    .slicknav_nav .slicknav_row, .slicknav_nav a {
+        padding: 3px 10px !important;
+        margin: 2px 5px;
+    }
+
+    .design-section, .marketing-section, .tech-section {
+        background: url("../images/services-box.png") no-repeat center !important;
+        background-size: 85vw !important;
+    }
+
+    .design-content-text {
+        width: 85vw;
+        height: 100%;
+        text-align: center;
+        top: 0px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        padding-right: 25px;
+        padding-left: 20px;
+    }
+
+    .design-content-text h1 {
+        text-align: right;
+        font-family: 'Courier New';
+        font-weight: normal;
+        font-style: italic;
+        font-size: 12px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        margin-top: 20px;
+    }
+
+    .services-list-ul li {
+        font-family: 'Courier New';
+        font-weight: normal;
+        font-style: italic;
+        font-size: 12px;
+        text-align: right;
+
+    }
+
+    .marketing-content-text {
+        width: 85vw;
+        height: 100%;
+        text-align: center;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        padding-left: 20px;
+    }
+
+    .marketing-content-text h1 {
+        text-align: right;
+        font-family: 'Courier New';
+        font-weight: normal;
+        font-style: italic;
+        font-size: 12px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+    .marketing-content-text .quote-name {
+        margin-right: 20px !important;
+    }
+
+    .services-section-text {
+        font-family: 'Courier New';
+        font-weight: normal;
+        font-style: italic;
+        text-align: right !important;
+        font-size: 12px;
+        width: 90%;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        margin-top: -40px;
+        padding-left: 10px;
+    }
+
+    .services-section-below-text {
+        font-family: 'Courier New';
+        font-weight: normal;
+        font-style: italic;
+        text-align: left !important;
+        font-size: 12px;
+        width: 80%;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+
+    .servicesbox-img {
+        width: 45vw;
+    }
+
+    .services-pencil-img {
+        position: absolute;
+        width: 40vw;
+        margin-left: -34vw;
+        top: 6vh;
+    }
+
+    .design-bubble {
+        position: absolute;
+        width: 12vw;
+        margin-left: 7vw;
+        top: 4vh;
+    }
+
+    .spacebar-img {
+        position: absolute;
+        width: 35vw;
+        margin-left: -50vw;
+        top: 17vh;
+    }
+
+    .tech-bubble {
+        position: absolute;
+        width: 12vw;
+        margin-left: -64vw;
+        top: 17vh;
+    }
+
+    .marketing-img {
+        position: absolute;
+        width: 40vw;
+        margin-left: -34vw;
+        top: 27vh;
+    }
+
+    .marketing-bubble {
+        position: absolute;
+        width: 12vw;
+        margin-left: 4vw;
+        top: 30vh;
+    }
+
+    .menu-section {
+        position: fixed;
+        padding: 0px 40px;
+        width: 50%;
+        z-index: 99;
+        top: 10px;
+    }
+
+    .menu-items-right > li {
+        float: right;
+        text-align: right !important;
+        margin-right: -25vw;
+        font-weight: 600;
+    }
+
+    .switch-text {
+        color: #000;
+        font-family: "yeah_papayeah_papa";
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: -8px;
+        margin-left: -45px;
+        float: left;
+    }
+
+    .home-main-text {
+        width: 90%;
+        font-family: 'Courier New';
+        font-weight: normal;
+        font-style: italic;
+        text-align: left !important;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    .home-horizontal-border {
+        width: 90vw;
+        text-align: left !important;
+        padding-left: 10px;
+        float: left;
+    }
+
+    .home-quote {
+        font-family: 'Courier New';
+        font-weight: normal;
+        font-style: italic;
+        text-align: right !important;
+        font-size: 14px;
+        margin-left: 0px;
+        margin-top: 15px;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .contact-section {
+        padding: 20px;
+    }
+
+    .sounds-good {
+        color: #000;
+        font-family: "yeah_papayeah_papa";
+        font-size: 25px;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contact-text {
+        font-size: 12px;
+    }
+
+    .contact-form {
+        padding: 5px 0px;
+    }
+
+    .tni-contact input[type="text"] {
+        display: block;
+        margin: 0;
+        width: 90%;
+        font-weight: 400;
+        font-size: 12px;
+        color: #000;
+        appearance: none;
+        box-shadow: none;
+        border-radius: 1px;
+        padding: 5px;
+        border: solid 1px #3b3b3b;
+        transition: box-shadow 0.3s, border 0.3s;
+        background-color: transparent;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+
+    textarea {
+        width: 95%;
+        height: 165px;
+        font-weight: 400;
+        font-size: 12px;
+        color: #000;
+        appearance: none;
+        box-shadow: none;
+        border-radius: 1px;
+        padding: 5px;
+        border: solid 1px #3b3b3b;
+        transition: box-shadow 0.3s, border 0.3s;
+        background-color: transparent;
+        margin-right: 25px;
+    }
+
+    .tni-submit {
+        padding: 5px 20px;
+        background-color: #000;
+        color: #fff;
+        font-family: "yeah_papayeah_papa";
+        font-size: 20px;
+        font-weight: 400;
+        border: 1px solid #000;
+        float: right;
+        margin-right: 30px;
+        margin-top: 10px;
+        margin-bottom: 70px;
+    }
+    
+    .and-more {
+        color: #000;
+        font-family: "yeah_papayeah_papa";
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+    }
+    
+    .portfolio-grid {
+        margin-top: -50px;
+    }
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+    .mobile-only {
+        display: block;
+    }
+
+    .mobile-no-show {
+        display: none;
+    }
+
+    .tni-left-section {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .tni-right-section {
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    .tni-logo {
+        height: 150px;
+        width: auto;
+        text-align: center !important;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .home-img-border {
+        position: static;
+        width: 100vw;
+        left: 0;
+        margin-top: -50px;
+    }
+
+    .tni-leftfixed-border {
+        display: none;
+    }
+
+    .tni-rightfixed-border {
+        display: none;
+    }
+
+    .home-img {
+        position: absolute;
+        width: 90vw;
+        top: 10vh;
+        left: 5vw;
+    }
+
+    .js #menu {
+		display:none;
+	}
+
+	.js .slicknav_menu {
+		display:block;
+        z-index:9999 !important;
+	}
+
+    .slicknav_menu {
+        display: block;
+        *zoom: 1;
+        font-size: 16px;
+        background: none !important;
+        padding: 5px;
+        margin-top: 10px !important;
+        z-index:9999 !important;
+    }
+
+    .slicknav_menutxt {
+        display: none !important;
+    }
+
+    .slicknav_menu .slicknav_icon {
+        float: none !important;
+        width: 1.125em;
+        height: 4.875em;
+        margin: 0 !important;
+    }
+
+    .slicknav_nav a {
+        text-decoration: none;
+        font-family: 'Courier New';
+        font-weight: normal;
+        font-style: normal;
+        text-align: right !important;
+        font-size: 18px;
+        margin-right: 30px;
+        font-weight: 600;
+        color: #000 !important;
+        border-bottom: 1px solid #000;
+    }
+
+    .slicknav_nav a:hover {
+        -webkit-border-radius: 0px !important;
+        -moz-border-radius: 0px !important;
+        border-radius: 0px !important;
+        background: #fff !important;
+        color: #000 !important;
+    }
+
+    .slicknav_nav, .slicknav_nav ul {
+        list-style: none;
+        overflow: hidden;
+        padding: 0;
+        width: 45vw;
+        float: right;
+    }
+
+    .mobile-logo {
+        position: absolute;
+        top:10px;
+        z-index:9999;
+    }
+
+    .tni-nav-logo {
+        height: 60px;
+        float: left;
+        margin-left: 20px;
+    }
+
+    .slicknav_nav .slicknav_row, .slicknav_nav a {
+        padding: 3px 10px !important;
+        margin: 2px 5px;
+    }
+
+    .design-section, .marketing-section, .tech-section {
+        background: url("../images/services-box.png") no-repeat center !important;
+        background-size: 85vw !important;
+    }
+
+    .design-content-text {
+        width: 85vw;
+        height: 100%;
+        text-align: center;
+        top: 0px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        padding-right: 25px;
+        padding-left: 20px;
+    }
+
+    .design-content-text h1 {
+        text-align: right;
+        font-family: 'Courier New';
+        font-weight: normal;
+        font-style: italic;
+        font-size: 12px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        margin-top: 20px;
+    }
+
+    .services-list-ul li {
+        font-family: 'Courier New';
+        font-weight: normal;
+        font-style: italic;
+        font-size: 12px;
+        text-align: right;
+
+    }
+
+    .marketing-content-text {
+        width: 85vw;
+        height: 100%;
+        text-align: center;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        padding-left: 20px;
+    }
+
+    .marketing-content-text h1 {
+        text-align: right;
+        font-family: 'Courier New';
+        font-weight: normal;
+        font-style: italic;
+        font-size: 12px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+    .marketing-content-text .quote-name {
+        margin-right: 20px !important;
+    }
+
+    .services-section-text {
+        font-family: 'Courier New';
+        font-weight: normal;
+        font-style: italic;
+        text-align: right !important;
+        font-size: 12px;
+        width: 90%;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        margin-top: -40px;
+        padding-left: 10px;
+    }
+
+    .services-section-below-text {
+        font-family: 'Courier New';
+        font-weight: normal;
+        font-style: italic;
+        text-align: left !important;
+        font-size: 12px;
+        width: 80%;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+
+    .servicesbox-img {
+        width: 40vw;
+    }
+
+    .services-pencil-img {
+        position: absolute;
+        width: 35vw;
+        margin-left: -30vw;
+        top: 5vh;
+    }
+
+    .design-bubble {
+        position: absolute;
+        width: 10vw;
+        margin-left: 5.5vw;
+        top: 3vh;
+    }
+
+    .spacebar-img {
+        position: absolute;
+        width: 30vw;
+        margin-left: -45vw;
+        top: 15vh;
+    }
+
+    .tech-bubble {
+        position: absolute;
+        width: 9vw;
+        margin-left: -55vw;
+        top: 15vh;
+    }
+
+    .marketing-img {
+        position: absolute;
+        width: 35vw;
+        margin-left: -30vw;
+        top: 25vh;
+    }
+
+    .marketing-bubble {
+        position: absolute;
+        width: 8vw;
+        margin-left: 5vw;
+        top: 28vh;
+    }
+
+    .menu-section {
+        position: fixed;
+        padding: 0px 40px;
+        width: 50%;
+        z-index: 99;
+        top: 10px;
+    }
+
+    .menu-items-right > li {
+        float: right;
+        text-align: right !important;
+        margin-right: -25vw;
+        font-weight: 600;
+    }
+
+    .switch-text {
+        color: #000;
+        font-family: "yeah_papayeah_papa";
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: -8px;
+        margin-left: -45px;
+        float: left;
+    }
+
+    .home-main-text {
+        width: 90%;
+        font-family: 'Courier New';
+        font-weight: normal;
+        font-style: italic;
+        text-align: left !important;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    .home-horizontal-border {
+        width: 90vw;
+        text-align: left !important;
+        padding-left: 10px;
+        float: left;
+    }
+
+    .home-quote {
+        font-family: 'Courier New';
+        font-weight: normal;
+        font-style: italic;
+        text-align: right !important;
+        font-size: 14px;
+        margin-left: 0px;
+        margin-top: 15px;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .contact-section {
+        padding: 20px;
+    }
+
+    .sounds-good {
+        color: #000;
+        font-family: "yeah_papayeah_papa";
+        font-size: 25px;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contact-text {
+        font-size: 12px;
+    }
+
+    .contact-form {
+        padding: 5px 0px;
+    }
+
+    .tni-contact input[type="text"] {
+        display: block;
+        margin: 0;
+        width: 90%;
+        font-weight: 400;
+        font-size: 12px;
+        color: #000;
+        appearance: none;
+        box-shadow: none;
+        border-radius: 1px;
+        padding: 5px;
+        border: solid 1px #3b3b3b;
+        transition: box-shadow 0.3s, border 0.3s;
+        background-color: transparent;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+
+    textarea {
+        width: 95%;
+        height: 165px;
+        font-weight: 400;
+        font-size: 12px;
+        color: #000;
+        appearance: none;
+        box-shadow: none;
+        border-radius: 1px;
+        padding: 5px;
+        border: solid 1px #3b3b3b;
+        transition: box-shadow 0.3s, border 0.3s;
+        background-color: transparent;
+        margin-right: 25px;
+    }
+
+    .tni-submit {
+        padding: 5px 20px;
+        background-color: #000;
+        color: #fff;
+        font-family: "yeah_papayeah_papa";
+        font-size: 20px;
+        font-weight: 400;
+        border: 1px solid #000;
+        float: right;
+        margin-right: 30px;
+        margin-top: 10px;
+        margin-bottom: 70px;
+    }
+    
+    
+    
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+    
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1300px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) {
+
+  /* Large screen, retina, stuff to override above media query */
+
+    .marketing-img {
+        position: absolute;
+        width: 23vw !important;
+        margin-left: -18vw !important;
+        top: 30vh !important;
+    }
+
+    .marketing-bubble {
+        position: absolute;
+        width: 8vw !important;
+        margin-left: 4vw !important;
+        top: 34vh !important;
+    }
+
+    .services-section-below-text {
+        font-family: 'Courier New';
+        font-weight: normal;
+        font-style: italic;
+        text-align: left !important;
+        font-size: 18px;
+        width: 35% !important;
+        margin-left: 25vw;
+        margin-top: 30px;
+    }
+
+}

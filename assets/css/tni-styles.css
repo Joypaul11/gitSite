@@ -1,0 +1,328 @@
+html {
+    
+}
+
+body {
+  background: url(../images/bg-pattern.png);
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.home-img {
+    height: 80vh;
+    width: auto;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.home-logo {
+    height: 30vh;
+    width: auto;
+    text-align: center !important;
+    margin-top: 20%;
+    margin-left: -100px;
+}
+
+.tni-left-border {
+    float: left;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: -30px;
+}
+
+.left-border-text {
+    font-family: 'Courier New';
+	src: url('CourierNewPSMT.eot');
+	src: url('CourierNewPSMT.eot?#iefix') format('embedded-opentype'),
+		url('CourierNewPSMT.woff') format('woff'),
+		url('CourierNewPSMT.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal; 
+    text-align: center !important;
+    font-size: 12px;
+    width: 45vh;
+    margin-top: 39vh;
+    margin-left: -150px; 
+    position: fixed;
+}
+
+.rotate {
+
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+
+    /* IE */
+    -ms-transform: rotate(-90deg);
+
+    /* Opera */
+    -o-transform: rotate(-90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.lt-border {
+    height: 20vh;
+    position: fixed;
+}
+
+.lb-border {
+    height: 9vh;
+    bottom: 10vh !important;
+    position: fixed;
+}
+
+.rt-border {
+    height: 40vh;
+    position: fixed;
+}
+
+.rb-border {
+    height: 9vh;
+    bottom: 10vh !important;
+    position: fixed;
+}
+
+.right-social-icons {
+    position: fixed;
+    margin-left: -15px;
+    margin-top: 40vh;
+}
+
+.home-main-text {
+    width: 80%;
+    font-family: 'Courier New';
+	src: url('CourierNewPSMT.eot');
+	src: url('CourierNewPSMT.eot?#iefix') format('embedded-opentype'),
+		url('CourierNewPSMT.woff') format('woff'),
+		url('CourierNewPSMT.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic; 
+    text-align: left !important;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.home-horizontal-border {
+    width: 40vw;
+    text-align: left !important;
+    padding-right: 60px;
+}
+
+.home-quote {
+    width: 80%;
+    font-family: 'Courier New';	
+	font-weight: normal;
+	font-style: italic; 
+    text-align: right !important;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.home-img-div {
+    position: relative;
+}
+
+.home-tag-text {
+    font-family: 'yeah_papayeah_papa';
+    font-size: 50px;
+    color: #000;
+    position: absolute !important;
+    top: 280px;
+    left: 300px;
+}
+
+.tni-right-border {
+    float: right;
+    position: absolute;
+    right: -20px;
+    top: 15%;
+}
+
+.social-icon {
+    height: 25px;
+    width: auto;
+    margin: 10px 0;
+}
+
+.menu-section {
+    position: fixed;
+    padding: 20px 40px;
+    width: 100%;
+    z-index: 99;
+}
+
+.tni-nav-logo {
+    height: 60px;
+    float: left;
+    margin-left: 40px;
+}
+
+.menu-items {
+    list-style: none;
+    float: left;
+    padding-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-items-right {
+    list-style: none;
+    float: right;
+    padding-top: 15px;
+}
+
+.menu-items > li {
+    float: left;
+    font-family: 'Courier New';	
+	font-weight: normal;
+	font-style: normal; 
+    text-align: left !important;
+    font-size: 18px;
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+
+
+.menu-items-right > li {
+    float: left;
+    font-family: 'Courier New';	
+	font-weight: normal;
+	font-style: normal; 
+    text-align: right !important;
+    font-size: 18px;
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+.mr-90 {
+    margin-right: 90px !important;
+}
+
+.menu-right-section {
+    float: right !important;
+}
+
+.switch {
+    z-index: 9999 !important;
+}
+
+.switch-text {    
+    color: #000;
+    font-family: "yeah_papayeah_papa";
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -20px;
+    margin-left: -60px;
+    float: left;   
+}
+
+
+
+
+/*** Toggle Switch ***/
+/* ============================================================
+  COMMON
+============================================================ */
+
+
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* ============================================================
+  SWITCH 1 - ROUND
+============================================================ */
+input.cmn-toggle-round + label {
+  padding: 2px;
+  width: 50px;
+  height: 25px;
+  background-color: #dddddd;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.cmn-toggle-round + label:before, input.cmn-toggle-round + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+input.cmn-toggle-round + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round + label:after {
+  width: 25px;
+  background-color: #fff;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: margin 0.4s;
+  -moz-transition: margin 0.4s;
+  -o-transition: margin 0.4s;
+  transition: margin 0.4s;
+}
+input.cmn-toggle-round:checked + label:before {
+  background-color: #8ce196;
+}
+input.cmn-toggle-round:checked + label:after {
+  margin-left: 25px;
+}
+
+.float-right {
+    float: right;
+}
+
